@@ -5,18 +5,21 @@
         <record id="joe" model="academy.ta">
             <field name="name">Joe</field>
             <field name="age">15</field>
+            <field name="frontend_visible">False</field>
         </record>
 
         <!-- Eden -->
         <record id="eden" model="academy.ta">
             <field name="name">Eden</field>
             <field name="age">20</field>
+            <field name="frontend_visible">True</field>
         </record>
 
         <!-- Julien -->
         <record id="julien" model="academy.ta">
             <field name="name">Julien</field>
             <field name="age">27</field>
+            <field name="frontend_visible">True</field>
         </record>
 
     </data>

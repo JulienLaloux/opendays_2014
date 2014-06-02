@@ -28,7 +28,7 @@
                             <h1>Teaching assistants</h1>
                             <ul>
                                 <t t-foreach="tas" t-as="ta">
-                                    <t t-if="ta['age'] >= 18">
+                                    <t t-if="ta['frontend_visible']">
                                         <li>
                                             <a t-attf-href="/tas/{{ ta['id'] }}/">
                                                 <t t-esc="ta['name']"/>
