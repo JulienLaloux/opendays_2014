@@ -1,0 +1,23 @@
+<openerp>
+    <data>
+
+        <!-- Joe -->
+        <record id="joe" model="academy.ta">
+            <field name="name">Joe</field>
+            <field name="age">15</field>
+        </record>
+
+        <!-- Eden -->
+        <record id="eden" model="academy.ta">
+            <field name="name">Eden</field>
+            <field name="age">20</field>
+        </record>
+
+        <!-- Julien -->
+        <record id="julien" model="academy.ta">
+            <field name="name">Julien</field>
+            <field name="age">27</field>
+        </record>
+
+    </data>
+</openerp>

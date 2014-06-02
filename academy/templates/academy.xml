@@ -1,0 +1,38 @@
+<openerp>
+    <data>
+
+        <!-- Teacher Assistant Template -->
+        <template id="ta" name="Teacher Assistant">
+            <t t-call="website.layout">
+                <p><t t-esc="name"/> is <t t-esc="age"/></p>
+            </t>
+        </template>
+
+        <!-- Index Template -->
+        <template id="index" name="Index">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                    <div class="oe_structure">
+                        <div class="container">
+                            <h1>Teaching assistants</h1>
+                            <ul>
+                                <t t-foreach="tas" t-as="ta">
+                                    <t t-if="ta['age'] >= 18">
+                                        <li>
+                                            <a t-attf-href="/tas/{{ta_index}}/">
+                                                <t t-esc="ta['name']"/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</openerp>
