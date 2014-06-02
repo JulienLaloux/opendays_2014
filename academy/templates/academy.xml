@@ -37,6 +37,16 @@
                                     </t>
                                 </t>
                             </ul>
+
+                            <table class="table table-condensed table-hover">
+                                <tr t-foreach="lectures" t-as="lecture">
+                                    <td><span t-field="lecture.date" t-field-options='{"format": "long"}'/></td>
+                                    <td><span t-field="lecture.date" t-field-options='{"format": "EEE"}'/></td>
+                                    <td><span t-field="lecture.name"/></td>
+                                </tr>
+                            </table>
+
+
                         </div>
                     </div>
                     <div class="oe_structure"/>

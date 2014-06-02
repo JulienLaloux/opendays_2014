@@ -20,6 +20,7 @@
         'security/ir.model.access.csv',
         'templates/academy.xml',
         'data/teacher_assistant.xml',
+        'data/lecture.xml',
         'view/teacher_assistant.xml',
     ],
     'tests': [
