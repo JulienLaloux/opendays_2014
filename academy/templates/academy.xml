@@ -4,7 +4,17 @@
         <!-- Teacher Assistant Template -->
         <template id="ta" name="Teacher Assistant">
             <t t-call="website.layout">
-                <p><t t-esc="ta.name"/> is <t t-esc="ta.age"/></p>
+
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                    <div class="oe_structure">
+                        <div class="container">
+                        <span t-field="ta.name"/> is <span t-field="ta.age"/>
+                        <div t-field="ta.biography"/>
+                        </div>
+                </div>
+                </div>
+
             </t>
         </template>
 
