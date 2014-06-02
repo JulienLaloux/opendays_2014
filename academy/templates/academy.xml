@@ -4,7 +4,7 @@
         <!-- Teacher Assistant Template -->
         <template id="ta" name="Teacher Assistant">
             <t t-call="website.layout">
-                <p><t t-esc="name"/> is <t t-esc="age"/></p>
+                <p><t t-esc="ta.name"/> is <t t-esc="ta.age"/></p>
             </t>
         </template>
 
@@ -20,7 +20,7 @@
                                 <t t-foreach="tas" t-as="ta">
                                     <t t-if="ta['age'] >= 18">
                                         <li>
-                                            <a t-attf-href="/tas/{{ta_index}}/">
+                                            <a t-attf-href="/tas/{{ ta['id'] }}/">
                                                 <t t-esc="ta['name']"/>
                                             </a>
                                         </li>
