@@ -1,7 +1,8 @@
 <openerp>
     <data>
 
-        <template id="simplify_events_list" inherit_id="website_event.index">
+        <!-- Add a simplify option in the customize menu to hide breadcrumb. Pay attention that we cannot set optional option from required to disabled and update a database ! (or we have to recreate the database)  -->
+        <template id="simplify_events_list" inherit_id="website_event.index" name="Simplify" optional="disabled">
             <xpath expr="//ol[hasclass('breadcrumb')]" position="replace"/>
             <xpath expr="//ul[hasclass('media-list')]/li/div/div[1]" position="replace"/>
             <xpath expr="//ul[hasclass('media-list')]/li/div//div[hasclass('text-muted')]" position="replace"/>

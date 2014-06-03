@@ -20,7 +20,7 @@
         'website_event'
     ],
     'data': [
-        'security/ir.model.access.csv',
+        # 'security/ir.model.access.csv',
         'templates/academy.xml',
         'templates/website_event.xml',
         'data/teacher_assistant.xml',
