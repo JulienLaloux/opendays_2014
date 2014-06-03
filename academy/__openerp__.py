@@ -26,6 +26,7 @@
         'data/teacher_assistant.xml',
         'data/lecture.xml',
         'view/teacher_assistant.xml',
+        'view/website_event.xml',
     ],
     'tests': [
     ],

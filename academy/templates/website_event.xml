@@ -1,10 +1,11 @@
 <openerp>
     <data>
 
-        <!-- By setting disabled for application value, the filter flag is set to False by default in the view -->
-        <record id="website_event.event_left_column" model="ir.ui.view">
-            <field name="application">disabled</field>
-        </record>
+        <template id="simplify_events_list" inherit_id="website_event.index">
+            <xpath expr="//ol[hasclass('breadcrumb')]" position="replace"/>
+            <xpath expr="//ul[hasclass('media-list')]/li/div/div[1]" position="replace"/>
+            <xpath expr="//ul[hasclass('media-list')]/li/div//div[hasclass('text-muted')]" position="replace"/>
+        </template>
 
     </data>
 </openerp>
