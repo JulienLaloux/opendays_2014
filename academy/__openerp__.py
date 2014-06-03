@@ -15,7 +15,10 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['website'],
+    'depends': [
+        'website',
+        'website_event'
+    ],
     'data': [
         'security/ir.model.access.csv',
         'templates/academy.xml',
